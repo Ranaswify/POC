@@ -3,29 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF84CEB328D28200007A21DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEB228D28200007A21DD /* AppDelegate.swift */; };
+		C74AEFCF1F4613949B3C1236 /* Pods_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD92DEB388261E3A78E287BB /* Pods_POC.framework */; };
+		CF5328FB28D4AD6300ECE4ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5328FA28D4AD6300ECE4ED /* User.swift */; };
+		CF5328FD28D4AE1F00ECE4ED /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5328FC28D4AE1F00ECE4ED /* LoginViewModel.swift */; };
+		CF5328FF28D4BA5E00ECE4ED /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5328FE28D4BA5E00ECE4ED /* LoginView.storyboard */; };
+		CF53290028D4D66200ECE4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEB228D28200007A21DD /* AppDelegate.swift */; };
+		CF53290228D4D7AF00ECE4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF53290128D4D7AF00ECE4ED /* Main.storyboard */; };
+		CF53290428D4D7D100ECE4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290328D4D7D100ECE4ED /* ViewController.swift */; };
+		CF53290628D5017300ECE4ED /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290528D5017300ECE4ED /* LoginService.swift */; };
+		CF53290A28D538E300ECE4ED /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290928D538E300ECE4ED /* LoginResponse.swift */; };
+		CF53290D28D6247D00ECE4ED /* OrdersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290C28D6247D00ECE4ED /* OrdersListViewModel.swift */; };
+		CF53291428D624DD00ECE4ED /* OrdersListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF53291328D624DD00ECE4ED /* OrdersListView.storyboard */; };
+		CF53291628D6269700ECE4ED /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53291528D6269700ECE4ED /* OrdersListViewController.swift */; };
+		CF53291828D63FA900ECE4ED /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53291728D63FA900ECE4ED /* OrderService.swift */; };
+		CF53291A28D65CD900ECE4ED /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53291928D65CD900ECE4ED /* Order.swift */; };
+		CF6C28DA28D3445C0089E286 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C28D928D3445C0089E286 /* LoginViewController.swift */; };
 		CF84CEB528D28200007A21DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEB428D28200007A21DD /* SceneDelegate.swift */; };
-		CF84CEB728D28200007A21DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEB628D28200007A21DD /* ViewController.swift */; };
-		CF84CEBA28D28200007A21DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF84CEB828D28200007A21DD /* Main.storyboard */; };
 		CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEBB28D28200007A21DD /* POC.xcdatamodeld */; };
 		CF84CEBF28D28201007A21DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF84CEBE28D28201007A21DD /* Assets.xcassets */; };
 		CF84CEC228D28201007A21DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF84CEC028D28201007A21DD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D75665E51B1FD29DA5CD34E /* Pods-POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POC.debug.xcconfig"; path = "Target Support Files/Pods-POC/Pods-POC.debug.xcconfig"; sourceTree = "<group>"; };
+		CD92DEB388261E3A78E287BB /* Pods_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5328FA28D4AD6300ECE4ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CF5328FC28D4AE1F00ECE4ED /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CF5328FE28D4BA5E00ECE4ED /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		CF53290128D4D7AF00ECE4ED /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF53290328D4D7D100ECE4ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF53290528D5017300ECE4ED /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		CF53290928D538E300ECE4ED /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		CF53290C28D6247D00ECE4ED /* OrdersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewModel.swift; sourceTree = "<group>"; };
+		CF53291328D624DD00ECE4ED /* OrdersListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrdersListView.storyboard; sourceTree = "<group>"; };
+		CF53291528D6269700ECE4ED /* OrdersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewController.swift; sourceTree = "<group>"; };
+		CF53291728D63FA900ECE4ED /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		CF53291928D65CD900ECE4ED /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CF6C28D928D3445C0089E286 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF84CEAF28D28200007A21DD /* POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84CEB228D28200007A21DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF84CEB428D28200007A21DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF84CEB628D28200007A21DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF84CEB928D28200007A21DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF84CEBC28D28200007A21DD /* POC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = POC.xcdatamodel; sourceTree = "<group>"; };
 		CF84CEBE28D28201007A21DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF84CEC128D28201007A21DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF84CEC328D28201007A21DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED7E9BE0515D12B7AA3B18E0 /* Pods-POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POC.release.xcconfig"; path = "Target Support Files/Pods-POC/Pods-POC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +59,143 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74AEFCF1F4613949B3C1236 /* Pods_POC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C62A09CB56B794CAA3BC6016 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D75665E51B1FD29DA5CD34E /* Pods-POC.debug.xcconfig */,
+				ED7E9BE0515D12B7AA3B18E0 /* Pods-POC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF5328F928D4AD0B00ECE4ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF6C28D928D3445C0089E286 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF53290B28D5FE2B00ECE4ED /* OrdersList */ = {
+			isa = PBXGroup;
+			children = (
+				CF53291228D624C100ECE4ED /* Service */,
+				CF53291128D624B100ECE4ED /* Controller */,
+				CF53291028D6249E00ECE4ED /* Model */,
+				CF53290F28D6249800ECE4ED /* View */,
+				CF53290E28D6248A00ECE4ED /* ViewModel */,
+			);
+			path = OrdersList;
+			sourceTree = "<group>";
+		};
+		CF53290E28D6248A00ECE4ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF53290C28D6247D00ECE4ED /* OrdersListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF53290F28D6249800ECE4ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF53291328D624DD00ECE4ED /* OrdersListView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF53291028D6249E00ECE4ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF53291928D65CD900ECE4ED /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF53291128D624B100ECE4ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF53291528D6269700ECE4ED /* OrdersListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF53291228D624C100ECE4ED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CF53291728D63FA900ECE4ED /* OrderService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CF6C28A728D28A9E0089E286 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CF53290B28D5FE2B00ECE4ED /* OrdersList */,
+				CF6C28B428D342310089E286 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CF6C28B428D342310089E286 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF5328F928D4AD0B00ECE4ED /* Controller */,
+				CF6C28DE28D3653F0089E286 /* Service */,
+				CF6C28DD28D365380089E286 /* Model */,
+				CF6C28DC28D3652F0089E286 /* ViewModel */,
+				CF6C28DB28D344E10089E286 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CF6C28DB28D344E10089E286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF5328FE28D4BA5E00ECE4ED /* LoginView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF6C28DC28D3652F0089E286 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF5328FC28D4AE1F00ECE4ED /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF6C28DD28D365380089E286 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF5328FA28D4AD6300ECE4ED /* User.swift */,
+				CF53290928D538E300ECE4ED /* LoginResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF6C28DE28D3653F0089E286 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CF53290528D5017300ECE4ED /* LoginService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		CF84CEA628D28200007A21DD = {
 			isa = PBXGroup;
 			children = (
 				CF84CEB128D28200007A21DD /* POC */,
 				CF84CEB028D28200007A21DD /* Products */,
+				C62A09CB56B794CAA3BC6016 /* Pods */,
+				F27F7C64156DC60754BF209B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +210,25 @@
 		CF84CEB128D28200007A21DD /* POC */ = {
 			isa = PBXGroup;
 			children = (
+				CF6C28A728D28A9E0089E286 /* Modules */,
 				CF84CEB228D28200007A21DD /* AppDelegate.swift */,
 				CF84CEB428D28200007A21DD /* SceneDelegate.swift */,
-				CF84CEB628D28200007A21DD /* ViewController.swift */,
-				CF84CEB828D28200007A21DD /* Main.storyboard */,
 				CF84CEBE28D28201007A21DD /* Assets.xcassets */,
 				CF84CEC028D28201007A21DD /* LaunchScreen.storyboard */,
 				CF84CEC328D28201007A21DD /* Info.plist */,
 				CF84CEBB28D28200007A21DD /* POC.xcdatamodeld */,
+				CF53290128D4D7AF00ECE4ED /* Main.storyboard */,
+				CF53290328D4D7D100ECE4ED /* ViewController.swift */,
 			);
 			path = POC;
+			sourceTree = "<group>";
+		};
+		F27F7C64156DC60754BF209B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD92DEB388261E3A78E287BB /* Pods_POC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF84CEC628D28201007A21DD /* Build configuration list for PBXNativeTarget "POC" */;
 			buildPhases = (
+				5FF03C32A8A2A50BD69CA6F0 /* [CP] Check Pods Manifest.lock */,
 				CF84CEAB28D28200007A21DD /* Sources */,
 				CF84CEAC28D28200007A21DD /* Frameworks */,
 				CF84CEAD28D28200007A21DD /* Resources */,
+				CF459547452F16B21A0CB71C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,35 +292,80 @@
 			files = (
 				CF84CEC228D28201007A21DD /* LaunchScreen.storyboard in Resources */,
 				CF84CEBF28D28201007A21DD /* Assets.xcassets in Resources */,
-				CF84CEBA28D28200007A21DD /* Main.storyboard in Resources */,
+				CF5328FF28D4BA5E00ECE4ED /* LoginView.storyboard in Resources */,
+				CF53291428D624DD00ECE4ED /* OrdersListView.storyboard in Resources */,
+				CF53290228D4D7AF00ECE4ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FF03C32A8A2A50BD69CA6F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-POC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF459547452F16B21A0CB71C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POC/Pods-POC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POC/Pods-POC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-POC/Pods-POC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF84CEAB28D28200007A21DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF84CEB728D28200007A21DD /* ViewController.swift in Sources */,
-				CF84CEB328D28200007A21DD /* AppDelegate.swift in Sources */,
+				CF53290028D4D66200ECE4ED /* AppDelegate.swift in Sources */,
+				CF5328FB28D4AD6300ECE4ED /* User.swift in Sources */,
+				CF53291828D63FA900ECE4ED /* OrderService.swift in Sources */,
+				CF53290A28D538E300ECE4ED /* LoginResponse.swift in Sources */,
 				CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */,
+				CF53291628D6269700ECE4ED /* OrdersListViewController.swift in Sources */,
+				CF6C28DA28D3445C0089E286 /* LoginViewController.swift in Sources */,
+				CF53290D28D6247D00ECE4ED /* OrdersListViewModel.swift in Sources */,
+				CF53290428D4D7D100ECE4ED /* ViewController.swift in Sources */,
 				CF84CEB528D28200007A21DD /* SceneDelegate.swift in Sources */,
+				CF53291A28D65CD900ECE4ED /* Order.swift in Sources */,
+				CF5328FD28D4AE1F00ECE4ED /* LoginViewModel.swift in Sources */,
+				CF53290628D5017300ECE4ED /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF84CEB828D28200007A21DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF84CEB928D28200007A21DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF84CEC028D28201007A21DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +495,7 @@
 		};
 		CF84CEC728D28201007A21DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D75665E51B1FD29DA5CD34E /* Pods-POC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +514,7 @@
 		};
 		CF84CEC828D28201007A21DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7E9BE0515D12B7AA3B18E0 /* Pods-POC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
