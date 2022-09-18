@@ -26,7 +26,7 @@ class LoginViewController : UIViewController
     @IBAction func login(_ sender: Any) {
         viewModel.LoginUser(username: usernameText?.text ?? "", password: passwordText?.text ?? "")
            
-        
-    }
+        let alert = UIAlertController(title: "Alert", message: "Login success", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)    }
     
 }

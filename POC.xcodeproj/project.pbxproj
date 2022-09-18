@@ -16,11 +16,6 @@
 		CF53290428D4D7D100ECE4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290328D4D7D100ECE4ED /* ViewController.swift */; };
 		CF53290628D5017300ECE4ED /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290528D5017300ECE4ED /* LoginService.swift */; };
 		CF53290A28D538E300ECE4ED /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290928D538E300ECE4ED /* LoginResponse.swift */; };
-		CF53290D28D6247D00ECE4ED /* OrdersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290C28D6247D00ECE4ED /* OrdersListViewModel.swift */; };
-		CF53291428D624DD00ECE4ED /* OrdersListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF53291328D624DD00ECE4ED /* OrdersListView.storyboard */; };
-		CF53291628D6269700ECE4ED /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53291528D6269700ECE4ED /* OrdersListViewController.swift */; };
-		CF53291828D63FA900ECE4ED /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53291728D63FA900ECE4ED /* OrderService.swift */; };
-		CF53291A28D65CD900ECE4ED /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53291928D65CD900ECE4ED /* Order.swift */; };
 		CF6C28DA28D3445C0089E286 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C28D928D3445C0089E286 /* LoginViewController.swift */; };
 		CF84CEB528D28200007A21DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEB428D28200007A21DD /* SceneDelegate.swift */; };
 		CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEBB28D28200007A21DD /* POC.xcdatamodeld */; };
@@ -38,11 +33,6 @@
 		CF53290328D4D7D100ECE4ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF53290528D5017300ECE4ED /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		CF53290928D538E300ECE4ED /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		CF53290C28D6247D00ECE4ED /* OrdersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewModel.swift; sourceTree = "<group>"; };
-		CF53291328D624DD00ECE4ED /* OrdersListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrdersListView.storyboard; sourceTree = "<group>"; };
-		CF53291528D6269700ECE4ED /* OrdersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewController.swift; sourceTree = "<group>"; };
-		CF53291728D63FA900ECE4ED /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
-		CF53291928D65CD900ECE4ED /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		CF6C28D928D3445C0089E286 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF84CEAF28D28200007A21DD /* POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84CEB228D28200007A21DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,62 +73,9 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		CF53290B28D5FE2B00ECE4ED /* OrdersList */ = {
-			isa = PBXGroup;
-			children = (
-				CF53291228D624C100ECE4ED /* Service */,
-				CF53291128D624B100ECE4ED /* Controller */,
-				CF53291028D6249E00ECE4ED /* Model */,
-				CF53290F28D6249800ECE4ED /* View */,
-				CF53290E28D6248A00ECE4ED /* ViewModel */,
-			);
-			path = OrdersList;
-			sourceTree = "<group>";
-		};
-		CF53290E28D6248A00ECE4ED /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CF53290C28D6247D00ECE4ED /* OrdersListViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		CF53290F28D6249800ECE4ED /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CF53291328D624DD00ECE4ED /* OrdersListView.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF53291028D6249E00ECE4ED /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CF53291928D65CD900ECE4ED /* Order.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF53291128D624B100ECE4ED /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CF53291528D6269700ECE4ED /* OrdersListViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CF53291228D624C100ECE4ED /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				CF53291728D63FA900ECE4ED /* OrderService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		CF6C28A728D28A9E0089E286 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CF53290B28D5FE2B00ECE4ED /* OrdersList */,
 				CF6C28B428D342310089E286 /* Login */,
 			);
 			path = Modules;
@@ -293,7 +230,6 @@
 				CF84CEC228D28201007A21DD /* LaunchScreen.storyboard in Resources */,
 				CF84CEBF28D28201007A21DD /* Assets.xcassets in Resources */,
 				CF5328FF28D4BA5E00ECE4ED /* LoginView.storyboard in Resources */,
-				CF53291428D624DD00ECE4ED /* OrdersListView.storyboard in Resources */,
 				CF53290228D4D7AF00ECE4ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,15 +285,11 @@
 			files = (
 				CF53290028D4D66200ECE4ED /* AppDelegate.swift in Sources */,
 				CF5328FB28D4AD6300ECE4ED /* User.swift in Sources */,
-				CF53291828D63FA900ECE4ED /* OrderService.swift in Sources */,
 				CF53290A28D538E300ECE4ED /* LoginResponse.swift in Sources */,
 				CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */,
-				CF53291628D6269700ECE4ED /* OrdersListViewController.swift in Sources */,
 				CF6C28DA28D3445C0089E286 /* LoginViewController.swift in Sources */,
-				CF53290D28D6247D00ECE4ED /* OrdersListViewModel.swift in Sources */,
 				CF53290428D4D7D100ECE4ED /* ViewController.swift in Sources */,
 				CF84CEB528D28200007A21DD /* SceneDelegate.swift in Sources */,
-				CF53291A28D65CD900ECE4ED /* Order.swift in Sources */,
 				CF5328FD28D4AE1F00ECE4ED /* LoginViewModel.swift in Sources */,
 				CF53290628D5017300ECE4ED /* LoginService.swift in Sources */,
 			);
