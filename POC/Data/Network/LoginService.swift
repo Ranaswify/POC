@@ -51,8 +51,6 @@ class LoginService
 
                }
                 
-                
-                print("response: \(response)")
             }
             catch
             {

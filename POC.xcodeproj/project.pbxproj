@@ -21,6 +21,8 @@
 		CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEBB28D28200007A21DD /* POC.xcdatamodeld */; };
 		CF84CEBF28D28201007A21DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF84CEBE28D28201007A21DD /* Assets.xcassets */; };
 		CF84CEC228D28201007A21DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF84CEC028D28201007A21DD /* LaunchScreen.storyboard */; };
+		CF884F0728E06590008DE298 /* OrdersListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF884F0628E06590008DE298 /* OrdersListView.storyboard */; };
+		CF8CA04928E2F6310084510E /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8CA04828E2F6310084510E /* OrdersListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		CF84CEBE28D28201007A21DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF84CEC128D28201007A21DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF84CEC328D28201007A21DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF884F0628E06590008DE298 /* OrdersListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrdersListView.storyboard; sourceTree = "<group>"; };
+		CF8CA04828E2F6310084510E /* OrdersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewController.swift; sourceTree = "<group>"; };
 		ED7E9BE0515D12B7AA3B18E0 /* Pods-POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POC.release.xcconfig"; path = "Target Support Files/Pods-POC/Pods-POC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,28 +69,58 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CF5328F928D4AD0B00ECE4ED /* Controller */ = {
+		CF53291B28DB318700ECE4ED /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				CF6C28D928D3445C0089E286 /* LoginViewController.swift */,
 			);
-			path = Controller;
+			path = Application;
 			sourceTree = "<group>";
 		};
-		CF6C28A728D28A9E0089E286 /* Modules */ = {
+		CF53291C28DB319400ECE4ED /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CF53291F28DB331F00ECE4ED /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CF53291D28DB31A400ECE4ED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CF53292028DB384F00ECE4ED /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CF53291E28DB31B500ECE4ED /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CF884F0428E0655B008DE298 /* OrdersList */,
 				CF6C28B428D342310089E286 /* Login */,
 			);
-			path = Modules;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CF53291F28DB331F00ECE4ED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CF5328FA28D4AD6300ECE4ED /* User.swift */,
+				CF53290928D538E300ECE4ED /* LoginResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CF53292028DB384F00ECE4ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CF53290528D5017300ECE4ED /* LoginService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		CF6C28B428D342310089E286 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				CF5328F928D4AD0B00ECE4ED /* Controller */,
-				CF6C28DE28D3653F0089E286 /* Service */,
-				CF6C28DD28D365380089E286 /* Model */,
 				CF6C28DC28D3652F0089E286 /* ViewModel */,
 				CF6C28DB28D344E10089E286 /* View */,
 			);
@@ -96,6 +130,7 @@
 		CF6C28DB28D344E10089E286 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF6C28D928D3445C0089E286 /* LoginViewController.swift */,
 				CF5328FE28D4BA5E00ECE4ED /* LoginView.storyboard */,
 			);
 			path = View;
@@ -107,23 +142,6 @@
 				CF5328FC28D4AE1F00ECE4ED /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		CF6C28DD28D365380089E286 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CF5328FA28D4AD6300ECE4ED /* User.swift */,
-				CF53290928D538E300ECE4ED /* LoginResponse.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF6C28DE28D3653F0089E286 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				CF53290528D5017300ECE4ED /* LoginService.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		CF84CEA628D28200007A21DD = {
@@ -147,7 +165,10 @@
 		CF84CEB128D28200007A21DD /* POC */ = {
 			isa = PBXGroup;
 			children = (
-				CF6C28A728D28A9E0089E286 /* Modules */,
+				CF53291B28DB318700ECE4ED /* Application */,
+				CF53291C28DB319400ECE4ED /* Domain */,
+				CF53291E28DB31B500ECE4ED /* Presentation */,
+				CF53291D28DB31A400ECE4ED /* Data */,
 				CF84CEB228D28200007A21DD /* AppDelegate.swift */,
 				CF84CEB428D28200007A21DD /* SceneDelegate.swift */,
 				CF84CEBE28D28201007A21DD /* Assets.xcassets */,
@@ -158,6 +179,23 @@
 				CF53290328D4D7D100ECE4ED /* ViewController.swift */,
 			);
 			path = POC;
+			sourceTree = "<group>";
+		};
+		CF884F0428E0655B008DE298 /* OrdersList */ = {
+			isa = PBXGroup;
+			children = (
+				CF884F0528E0657C008DE298 /* View */,
+			);
+			path = OrdersList;
+			sourceTree = "<group>";
+		};
+		CF884F0528E0657C008DE298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF884F0628E06590008DE298 /* OrdersListView.storyboard */,
+				CF8CA04828E2F6310084510E /* OrdersListViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F27F7C64156DC60754BF209B /* Frameworks */ = {
@@ -230,6 +268,7 @@
 				CF84CEC228D28201007A21DD /* LaunchScreen.storyboard in Resources */,
 				CF84CEBF28D28201007A21DD /* Assets.xcassets in Resources */,
 				CF5328FF28D4BA5E00ECE4ED /* LoginView.storyboard in Resources */,
+				CF884F0728E06590008DE298 /* OrdersListView.storyboard in Resources */,
 				CF53290228D4D7AF00ECE4ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +325,7 @@
 				CF53290028D4D66200ECE4ED /* AppDelegate.swift in Sources */,
 				CF5328FB28D4AD6300ECE4ED /* User.swift in Sources */,
 				CF53290A28D538E300ECE4ED /* LoginResponse.swift in Sources */,
+				CF8CA04928E2F6310084510E /* OrdersListViewController.swift in Sources */,
 				CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */,
 				CF6C28DA28D3445C0089E286 /* LoginViewController.swift in Sources */,
 				CF53290428D4D7D100ECE4ED /* ViewController.swift in Sources */,
