@@ -14,9 +14,11 @@
 		CF53290028D4D66200ECE4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEB228D28200007A21DD /* AppDelegate.swift */; };
 		CF53290228D4D7AF00ECE4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF53290128D4D7AF00ECE4ED /* Main.storyboard */; };
 		CF53290428D4D7D100ECE4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290328D4D7D100ECE4ED /* ViewController.swift */; };
-		CF53290628D5017300ECE4ED /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290528D5017300ECE4ED /* LoginService.swift */; };
+		CF53290628D5017300ECE4ED /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290528D5017300ECE4ED /* APIServices.swift */; };
 		CF53290A28D538E300ECE4ED /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53290928D538E300ECE4ED /* LoginResponse.swift */; };
 		CF6C28DA28D3445C0089E286 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C28D928D3445C0089E286 /* LoginViewController.swift */; };
+		CF72168428F4BE450079BBA9 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72168328F4BE450079BBA9 /* Orders.swift */; };
+		CF72168628F4BE810079BBA9 /* OrdersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72168528F4BE810079BBA9 /* OrdersListViewModel.swift */; };
 		CF84CEB528D28200007A21DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEB428D28200007A21DD /* SceneDelegate.swift */; };
 		CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF84CEBB28D28200007A21DD /* POC.xcdatamodeld */; };
 		CF84CEBF28D28201007A21DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF84CEBE28D28201007A21DD /* Assets.xcassets */; };
@@ -33,9 +35,11 @@
 		CF5328FE28D4BA5E00ECE4ED /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		CF53290128D4D7AF00ECE4ED /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CF53290328D4D7D100ECE4ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF53290528D5017300ECE4ED /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		CF53290528D5017300ECE4ED /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		CF53290928D538E300ECE4ED /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		CF6C28D928D3445C0089E286 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF72168328F4BE450079BBA9 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		CF72168528F4BE810079BBA9 /* OrdersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewModel.swift; sourceTree = "<group>"; };
 		CF84CEAF28D28200007A21DD /* POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84CEB228D28200007A21DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF84CEB428D28200007A21DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		CF53291F28DB331F00ECE4ED /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				CF72168328F4BE450079BBA9 /* Orders.swift */,
 				CF5328FA28D4AD6300ECE4ED /* User.swift */,
 				CF53290928D538E300ECE4ED /* LoginResponse.swift */,
 			);
@@ -113,7 +118,7 @@
 		CF53292028DB384F00ECE4ED /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				CF53290528D5017300ECE4ED /* LoginService.swift */,
+				CF53290528D5017300ECE4ED /* APIServices.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -140,6 +145,14 @@
 			isa = PBXGroup;
 			children = (
 				CF5328FC28D4AE1F00ECE4ED /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF72168228F4BE340079BBA9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF72168528F4BE810079BBA9 /* OrdersListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -184,6 +197,7 @@
 		CF884F0428E0655B008DE298 /* OrdersList */ = {
 			isa = PBXGroup;
 			children = (
+				CF72168228F4BE340079BBA9 /* ViewModel */,
 				CF884F0528E0657C008DE298 /* View */,
 			);
 			path = OrdersList;
@@ -324,6 +338,8 @@
 			files = (
 				CF53290028D4D66200ECE4ED /* AppDelegate.swift in Sources */,
 				CF5328FB28D4AD6300ECE4ED /* User.swift in Sources */,
+				CF72168428F4BE450079BBA9 /* Orders.swift in Sources */,
+				CF72168628F4BE810079BBA9 /* OrdersListViewModel.swift in Sources */,
 				CF53290A28D538E300ECE4ED /* LoginResponse.swift in Sources */,
 				CF8CA04928E2F6310084510E /* OrdersListViewController.swift in Sources */,
 				CF84CEBD28D28200007A21DD /* POC.xcdatamodeld in Sources */,
@@ -331,7 +347,7 @@
 				CF53290428D4D7D100ECE4ED /* ViewController.swift in Sources */,
 				CF84CEB528D28200007A21DD /* SceneDelegate.swift in Sources */,
 				CF5328FD28D4AE1F00ECE4ED /* LoginViewModel.swift in Sources */,
-				CF53290628D5017300ECE4ED /* LoginService.swift in Sources */,
+				CF53290628D5017300ECE4ED /* APIServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

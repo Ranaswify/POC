@@ -6,13 +6,19 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class LoginViewModel
 {
-    var service = LoginService()
+    var service = APIServices()
     
-    func LoginUser(username:String, password: String){
-        service.Login(username: username, password: password)
+    var usernameBehavior = BehaviorRelay<String>(value: "")
+    var passwordBehavior = BehaviorRelay<String>(value: "")
+
+    
+    func LoginUser(){
+        service.Login(username: usernameBehavior.value, password: passwordBehavior.value)
         
     }
 }

@@ -6,4 +6,7 @@ target 'POC' do
   # Pods for POC
 
 pod 'Alamofire'
+pod 'RxSwift'
+pod'RxCocoa'
+
 end
